@@ -1,0 +1,412 @@
+header {
+  width: 100%;
+  padding: 0 10% 1em 10%;
+  background-image: url("../../images/header.png");
+  background-size: auto 11.5em;
+  background-position: 1em top;
+  background-repeat: no-repeat; }
+
+#header-top {
+  width: 100%;
+  height: 6em; }
+
+#header-title {
+  height: 100%;
+  float: left; }
+  #header-title h1 {
+    color: #fff;
+    text-shadow: #353535 1px 0 15px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "dinbold", Gadget, sans-serif;
+    position: relative; }
+  #header-title h1::before {
+    content: "\f072";
+    position: absolute;
+    left: -1em;
+    top: .25em;
+    font-family: FontAwesome;
+    color: #cfdde7; }
+
+#header-alert {
+  height: 100%;
+  float: right; }
+  #header-alert span {
+    color: #E82C0C;
+    font-weight: bold;
+    margin-right: .5em;
+    text-transform: uppercase; }
+  #header-alert div {
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: .5em;
+    background-color: #E82C0C;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff; }
+    #header-alert div i {
+      font-size: 1em; }
+
+#header-title,
+#header-alert {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+nav {
+  width: 100%;
+  clear: both; }
+
+#nav-inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.nav-item {
+  width: 16%;
+  height: 5em;
+  position: relative;
+  background-color: orange;
+  background-color: #f8951d;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#faac4e), to(#f8951d));
+  background-image: -webkit-linear-gradient(top, #faac4e, #f8951d);
+  background-image: linear-gradient(to bottom, #faac4e, #f8951d);
+  border-radius: 0.25em;
+  padding: .5em 1.5em;
+  color: #fff;
+  text-shadow: #915104 1px 0 15px; }
+
+.nav-item-snipe {
+  position: absolute;
+  right: 1em;
+  bottom: 1em; }
+
+.nav-item-last {
+  background-color: #5a8eca;
+  background-color: #5a8eca;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#81a8d6), to(#5a8eca));
+  background-image: -webkit-linear-gradient(top, #81a8d6, #5a8eca);
+  background-image: linear-gradient(to bottom, #81a8d6, #5a8eca); }
+
+main {
+  padding: 0 10%; }
+
+#teams {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-bottom: .5em; }
+
+.team-container {
+  width: 32.75%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #cfdde7;
+  margin-bottom: .5em;
+  margin-bottom: .75vw;
+  border-radius: 0.25em;
+  cursor: pointer; }
+  .team-container span:first-of-type {
+    height: 1.25em;
+    display: inline-block; }
+  .team-container h2 {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1em; }
+
+.team-roster {
+  width: 100%;
+  padding: 1.5em 1.5em 0 1.5em; }
+
+.team-member {
+  width: 100%;
+  background-color: #bed1df;
+  margin: .25em 0;
+  color: #00245D;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 0.75em; }
+  .team-member div:nth-child(2) {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: .5em; }
+
+.team-member-photo {
+  width: 2.5em;
+  min-width: 2.5em;
+  height: 2.5em;
+  background-color: #353535;
+  background-size: cover;
+  background-position: center center;
+  -webkit-border-top-left-radius: .75em;
+  -webkit-border-bottom-left-radius: .75em;
+  -moz-border-radius-topleft: .75em;
+  -moz-border-radius-bottomleft: .75em;
+  border-top-left-radius: .75em;
+  border-bottom-left-radius: .75em; }
+
+.team-role {
+  padding-right: 1em;
+  color: #5a8eca; }
+
+.team-next-flight {
+  width: 100%;
+  padding: .75em 1.5em 1em 1.5em; }
+
+.team-next-flight-detail {
+  width: 100%;
+  color: grey; }
+  .team-next-flight-detail span:last-of-type {
+    float: right; }
+  .team-next-flight-detail em {
+    font-variant: small-caps;
+    color: #939393; }
+
+.team-next-flight-cities {
+  font-size: 1.25em;
+  text-align: center;
+  font-weight: bold; }
+  .team-next-flight-cities i {
+    color: grey; }
+
+.team-more-info {
+  width: 100%;
+  background-color: grey;
+  height: 3.75em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-border-bottom-right-radius: .25em;
+  -webkit-border-bottom-left-radius: .25em;
+  -moz-border-radius-bottomright: .25em;
+  -moz-border-radius-bottomleft: .25em;
+  border-bottom-right-radius: .25em;
+  border-bottom-left-radius: .25em; }
+
+.team-section-intro {
+  background-color: #00245D;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1.5em; }
+  .team-section-intro span:first-of-type {
+    font-size: 1.25em;
+    text-transform: capitalize;
+    font-family: 'dinbold';
+    font-weight: bold;
+    height: auto; }
+  .team-section-intro div:first-of-type {
+    padding: 0; }
+  .team-section-intro input {
+    width: 100%;
+    border-radius: 0.5em;
+    border: 0;
+    outline: 0;
+    font-size: 1em;
+    padding: .5em .5em .5em 1.75em;
+    box-sizing: border-box;
+    position: relative;
+    background-image: url("../../images/team-section-intro-input.png");
+    background-position: .5em center;
+    background-repeat: no-repeat;
+    background-size: 1em; }
+
+#team-key {
+  width: 100%;
+  padding: 1em 0 .5em 0; }
+  #team-key i {
+    position: relative; }
+  #team-key .lead {
+    color: #5a8eca; }
+  #team-key .lead::after {
+    content: "\2022";
+    position: absolute;
+    font-size: 2em;
+    color: #69c040;
+    left: 0;
+    top: -.5em;
+    text-shadow: #cfdde7 1px 0 15px; }
+  #team-key p {
+    margin-bottom: .5em; }
+  #team-key p:last-of-type {
+    margin-bottom: 0; }
+  #team-key i {
+    margin-right: .5em; }
+
+section {
+  width: 100%;
+  padding: 0 10%; }
+
+#leadership {
+  width: 100%;
+  background-color: #5a8eca;
+  padding: 1.5em 1.5em 0 1.5em;
+  border-radius: 0.25em; }
+  #leadership h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'dinbold';
+    margin-bottom: 1em; }
+
+#leadership-members {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.leadership-cell {
+  width: 22%;
+  text-align: center;
+  margin-bottom: 1.5em; }
+  .leadership-cell span:first-of-type {
+    font-size: 1.5em;
+    color: #00245D;
+    display: inline-block;
+    margin-bottom: .25em; }
+
+.leadership-portrait {
+  width: 75%;
+  height: auto;
+  padding-top: 75%;
+  background-color: lightgrey;
+  border-radius: 50%;
+  margin-bottom: .5em;
+  margin-left: 12.5%;
+  background-size: cover;
+  background-position: center center; }
+
+#kiosks {
+  width: 100%;
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+#kiosks-left,
+#kiosks-right {
+  width: 50%;
+  height: 500px; }
+
+#kiosks-left {
+  -webkit-border-top-left-radius: .25em;
+  -webkit-border-bottom-left-radius: .25em;
+  -moz-border-radius-topleft: .25em;
+  -moz-border-radius-bottomleft: .25em;
+  border-top-left-radius: .25em;
+  border-bottom-left-radius: .25em; }
+
+#kiosks-right {
+  -webkit-border-top-right-radius: .25em;
+  -webkit-border-bottom-right-radius: .25em;
+  -moz-border-radius-topright: .25em;
+  -moz-border-radius-bottomright: .25em;
+  border-top-right-radius: .25em;
+  border-bottom-right-radius: .25em;
+  background-color: lightgrey; }
+
+footer {
+  width: 100%;
+  height: 11.5em;
+  margin-top: 1em;
+  background-image: url("../../images/footer.png");
+  background-size: auto 100%;
+  background-position: right 1em top;
+  background-repeat: no-repeat; }
+
+aside {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  text-align: center;
+  color: #5a8eca;
+  font-variant: small-caps; }
+  aside i:last-of-type {
+    margin-top: 1em; }
+
+/*# sourceMappingURL=development.css.map */
